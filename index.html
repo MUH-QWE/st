@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="i18n" data-en="STORE V1 | Minimalist Streetwear" data-ar="STORE V1 | ملابس الشارع العصرية">STORE V1 | Minimalist Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <button class="mobile-menu-btn" aria-label="Menu" id="open-menu-btn">
+            <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+        
+        <div class="brand-logo">STORE_V1</div>
+        
+        <nav class="nav-links">
+            <a href="#shop" class="i18n" data-en="Shop" data-ar="المتجر">Shop</a>
+            <a href="#shop" class="i18n" data-en="Collections" data-ar="التشكيلات">Collections</a>
+            <a href="#shop" class="i18n" data-en="Lookbook" data-ar="المعرض">Lookbook</a>
+            <a href="#footer" class="i18n" data-en="About" data-ar="من نحن">About</a>
+        </nav>
+        
+        <div class="header-icons">
+            <button class="icon-btn lang-toggle" aria-label="Toggle Language" id="lang-toggle-btn">
+                <span class="lang-text" id="lang-text">AR</span>
+            </button>
+            <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+                <svg viewBox="0 0 24 24" id="theme-icon">
+                    <path d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+                </svg>
+            </button>
+            <button class="icon-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24"><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49A.996.996 0 0020.01 4H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <button class="close-drawer-btn" aria-label="Close Menu" id="close-menu-btn">
+            <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+        <nav class="mobile-nav-links">
+            <a href="#shop" class="i18n" data-en="Shop" data-ar="المتجر">Shop</a>
+            <a href="#shop" class="i18n" data-en="Collections" data-ar="التشكيلات">Collections</a>
+            <a href="#shop" class="i18n" data-en="Lookbook" data-ar="المعرض">Lookbook</a>
+            <a href="#footer" class="i18n" data-en="About" data-ar="من نحن">About</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Streetwear Collection Hero">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-subtitle i18n" data-en="SEASON 01 // FW26" data-ar="الموسم الأول // خريف وشتاء ٢٦">SEASON 01 // FW26</div>
+            <h1 class="i18n" data-en="CLOTHING<br>STORE" data-ar="متجر<br>ملابس">CLOTHING<br>STORE</h1>
+            <p class="i18n" data-en="Elevated silhouettes. Uncompromising aesthetics." data-ar="تصاميم استثنائية. أناقة لا تقبل المساومة.">Elevated silhouettes. Uncompromising aesthetics.</p>
+            <a href="#shop" class="btn btn-primary">
+                <span class="btn-text i18n" data-en="EXPLORE THE COLLECTION" data-ar="تصفح التشكيلة">EXPLORE THE COLLECTION</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Grid Section -->
+    <main class="section-wrapper" id="shop">
+        <div class="section-header">
+            <div class="number-accent i18n" data-en="01 // LATEST DROPS" data-ar="01 // أحدث الإصدارات">01 // LATEST DROPS</div>
+            <h2 class="i18n" data-en="SONGS ADDITIONS" data-ar="أحدث الإضافات">SONGS ADDITIONS</h2>
+            <div class="accent-line"></div>
+        </div>
+        
+        <div class="grid">
+            <!-- Product 1 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/product1.png" alt="Product 1">
+                </div>
+                <div class="card-info">
+                    <div class="card-text-group">
+                        <h3 class="card-title i18n" data-en="Track 01 - Heavyweight Hoodie" data-ar="تراك ٠١ - هودي ثقيل">Track 01 - Heavyweight Hoodie</h3>
+                        <p class="card-category i18n" data-en="Outerwear" data-ar="ملابس خارجية">Outerwear</p>
+                    </div>
+                    <span class="card-price i18n" data-en="120 EGP" data-ar="١٢٠ ج.م">120 EGP</span>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/product2.png" alt="Product 2">
+                </div>
+                <div class="card-info">
+                    <div class="card-text-group">
+                        <h3 class="card-title i18n" data-en="Track 02 - Boxy Tee" data-ar="تراك ٠٢ - تي شيرت بقصة واسعة">Track 02 - Boxy Tee</h3>
+                        <p class="card-category i18n" data-en="Essentials" data-ar="أساسيات">Essentials</p>
+                    </div>
+                    <span class="card-price i18n" data-en="55 EGP" data-ar="٥٥ ج.م">55 EGP</span>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/product1.png" alt="Product 3">
+                </div>
+                <div class="card-info">
+                    <div class="card-text-group">
+                        <h3 class="card-title i18n" data-en="Track 03 - Nylon Zip" data-ar="تراك ٠٣ - جاكيت نايلون">Track 03 - Nylon Zip</h3>
+                        <p class="card-category i18n" data-en="Outerwear" data-ar="ملابس خارجية">Outerwear</p>
+                    </div>
+                    <span class="card-price i18n" data-en="140 EGP" data-ar="١٤٠ ج.م">140 EGP</span>
+                </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/product2.png" alt="Product 4">
+                </div>
+                <div class="card-info">
+                    <div class="card-text-group">
+                        <h3 class="card-title i18n" data-en="Track 04 - Signature Cap" data-ar="تراك ٠٤ - كاب كلاسيكي">Track 04 - Signature Cap</h3>
+                        <p class="card-category i18n" data-en="Accessories" data-ar="إكسسوارات">Accessories</p>
+                    </div>
+                    <span class="card-price i18n" data-en="45 EGP" data-ar="٤٥ ج.م">45 EGP</span>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <div class="number-accent i18n" data-en="02 // JOIN US" data-ar="02 // انضم إلينا">02 // JOIN US</div>
+            <h2 class="i18n" data-en="EARLY ACCESS" data-ar="أولوية الوصول">EARLY ACCESS</h2>
+            <p class="i18n" data-en="Subscribe to receive updates, access to exclusive deals, and more." data-ar="اشترك لتصلك أحدث الإصدارات، العروض الحصرية، والمزيد.">Subscribe to receive updates, access to exclusive deals, and more.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Email Address" required class="i18n-placeholder" data-en="Email Address" data-ar="البريد الإلكتروني">
+                <button type="submit" class="btn btn-secondary">
+                    <span class="btn-text i18n" data-en="SUBSCRIBE" data-ar="اشتراك">SUBSCRIBE</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-grid">
+            <div class="footer-col brand-col">
+                <div class="brand-logo">STORE_V1</div>
+                <p class="i18n" data-en="Flourish in war. Minimalist streetwear based in Cairo." data-ar="تألق رغم الصعاب. ملابس شارع عصرية، من قلب القاهرة.">Flourish in war. Minimalist streetwear based in Cairo.</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="i18n" data-en="SUPPORT" data-ar="الدعم والمساعدة">SUPPORT</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="i18n" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a></li>
+                    <li><a href="#" class="i18n" data-en="Shipping & Returns" data-ar="الشحن والاسترجاع">Shipping & Returns</a></li>
+                    <li><a href="#" class="i18n" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="i18n" data-en="LEGAL" data-ar="الشروط والأحكام">LEGAL</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="i18n" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a></li>
+                    <li><a href="#" class="i18n" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="i18n" data-en="SOCIAL" data-ar="الشبكات الاجتماعية">SOCIAL</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 STORE_V1. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
