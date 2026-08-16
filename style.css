@@ -646,7 +646,7 @@ img {
 .card-media {
     position: relative;
     aspect-ratio: 1 / 1.12;
-    background-color: var(--color-surface);
+    background-color: var(--color-bg);
     overflow: hidden;
     margin-bottom: 1.25rem;
     border: 1px solid var(--border-color);
@@ -1274,11 +1274,11 @@ img {
    13. Lookbook / Editorial Showcase
    -------------------------------------------------------------------------- */
 .editorial-section {
-    background-color: #0b0b0c;
-    color: #f1eee7;
-    padding: 6rem 0;
-    border-top: 1px solid rgba(241, 238, 231, 0.1);
-    border-bottom: 1px solid rgba(241, 238, 231, 0.1);
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    padding: 5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .editorial-container {
@@ -1295,7 +1295,7 @@ img {
     position: relative;
     aspect-ratio: 4 / 3.2;
     overflow: hidden;
-    border: 1px solid rgba(241, 238, 231, 0.15);
+    border: 1px solid var(--border-color);
 }
 
 .editorial-img {
@@ -1326,7 +1326,7 @@ img {
 
 .editorial-title {
     font-size: clamp(2rem, 3.8vw, 3.25rem);
-    color: #f1eee7;
+    color: var(--color-text-main);
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
 }
@@ -1334,7 +1334,7 @@ img {
 .editorial-body {
     font-size: 1.05rem;
     line-height: 1.7;
-    color: #b0aba1;
+    color: var(--color-text-muted);
     margin-bottom: 2.5rem;
     font-weight: 300;
 }
@@ -1345,8 +1345,8 @@ img {
     gap: 1.5rem;
     width: 100%;
     margin-bottom: 3rem;
-    border-top: 1px solid rgba(241, 238, 231, 0.15);
-    border-bottom: 1px solid rgba(241, 238, 231, 0.15);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     padding: 1.5rem 0;
 }
 
@@ -1359,34 +1359,34 @@ img {
 .spec-val {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--color-tan);
+    color: var(--color-crimson);
 }
 
 .spec-lbl {
     font-size: 0.68rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #8c867b;
+    color: var(--color-text-muted);
 }
 
 .editorial-text-side .btn-secondary {
-    color: #f1eee7;
-    border-color: #f1eee7;
+    color: var(--color-text-main);
+    border-color: var(--color-text-main);
 }
 
 .editorial-text-side .btn-secondary:hover {
-    background-color: #f1eee7;
-    color: #0b0b0c;
+    background-color: var(--color-text-main);
+    color: var(--color-bg);
 }
 
 /* --------------------------------------------------------------------------
    13.5 Spotify Soundscape Section
    -------------------------------------------------------------------------- */
 .soundscape-section {
-    background-color: #0b0b0c;
-    padding: 6rem 0;
-    border-top: 1px solid rgba(241, 238, 231, 0.08);
-    border-bottom: 1px solid rgba(241, 238, 231, 0.08);
+    background-color: var(--color-bg);
+    padding: 5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .soundscape-inner {
@@ -1412,7 +1412,7 @@ img {
 
 .soundscape-title {
     font-size: clamp(2rem, 3.8vw, 3.25rem);
-    color: #f1eee7;
+    color: var(--color-text-main);
     line-height: 1.1;
     letter-spacing: -0.025em;
 }
@@ -1420,7 +1420,7 @@ img {
 .soundscape-desc {
     font-size: 1rem;
     line-height: 1.7;
-    color: #9c978e;
+    color: var(--color-text-muted);
     font-weight: 300;
     max-width: 440px;
 }
@@ -1430,8 +1430,8 @@ img {
     align-items: center;
     gap: 0.65rem;
     padding: 0.5rem 0;
-    border-top: 1px solid rgba(241, 238, 231, 0.1);
-    border-bottom: 1px solid rgba(241, 238, 231, 0.1);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     width: 100%;
 }
 
@@ -1439,11 +1439,11 @@ img {
     font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.18em;
-    color: var(--color-tan);
+    color: var(--color-crimson);
 }
 
 .soundscape-dot {
-    color: rgba(241, 238, 231, 0.25);
+    color: var(--color-text-subtle);
     font-size: 1.2rem;
 }
 
@@ -1456,8 +1456,8 @@ img {
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #f1eee7;
-    border: 1px solid rgba(241, 238, 231, 0.35);
+    color: var(--color-text-main);
+    border: 1px solid var(--color-text-main);
     background-color: transparent;
     transition: all var(--transition-snappy);
     cursor: pointer;
@@ -1467,7 +1467,7 @@ img {
 .btn-outline-dark:hover {
     background-color: #1DB954;
     border-color: #1DB954;
-    color: #000;
+    color: #fff;
 }
 
 .soundscape-player-col {
@@ -1477,8 +1477,8 @@ img {
 
 .spotify-embed-wrapper {
     position: relative;
-    border: 1px solid rgba(241, 238, 231, 0.1);
-    background-color: #121212;
+    border: 1px solid var(--border-color);
+    background-color: var(--color-surface);
     overflow: hidden;
 }
 
@@ -1524,13 +1524,13 @@ img {
 .newsletter-section {
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 6rem var(--gutter);
+    padding: 5rem var(--gutter);
 }
 
 .newsletter-card {
-    background-color: var(--color-surface);
+    background-color: var(--color-bg);
     border: 1px solid var(--border-color);
-    padding: 4.5rem 3rem;
+    padding: 4rem 3rem;
     text-align: center;
     max-width: 820px;
     margin: 0 auto;
@@ -1542,6 +1542,7 @@ img {
 .newsletter-title {
     font-size: clamp(2rem, 3.5vw, 2.75rem);
     margin-bottom: 1rem;
+    color: var(--color-text-main);
 }
 
 .newsletter-desc {
@@ -1617,10 +1618,10 @@ img {
    15. Footer & Accordions
    -------------------------------------------------------------------------- */
 .footer {
-    background-color: #0b0b0c;
-    color: #f1eee7;
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
     padding: 5rem var(--gutter) 2.5rem;
-    border-top: 1px solid rgba(241, 238, 231, 0.1);
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-top {
@@ -1639,13 +1640,12 @@ img {
 }
 
 .footer-logo {
-    filter: invert(1) brightness(1.2);
     height: 38px;
     width: auto;
 }
 
 .footer-manifesto {
-    color: #9c978e;
+    color: var(--color-text-muted);
     font-size: 0.88rem;
     line-height: 1.7;
     max-width: 380px;
@@ -1663,8 +1663,8 @@ img {
     font-weight: 700;
     letter-spacing: 0.14em;
     padding: 0.3rem 0.65rem;
-    border: 1px solid rgba(241, 238, 231, 0.2);
-    color: #d7be9d;
+    border: 1px solid var(--border-color-dark);
+    color: var(--color-text-main);
 }
 
 .footer-links-grid {
@@ -1688,20 +1688,20 @@ img {
     cursor: pointer;
     padding: 0.5rem 0;
     text-align: start;
-    border-bottom: 1px solid rgba(241, 238, 231, 0.12);
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 0.75rem;
     transition: color var(--transition-snappy);
 }
 
 .footer-heading-btn:hover .footer-heading {
-    color: var(--color-tan);
+    color: var(--color-crimson);
 }
 
 .footer-heading {
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.18em;
-    color: #f1eee7;
+    color: var(--color-text-main);
     transition: color var(--transition-snappy);
 }
 
@@ -1709,12 +1709,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #9c978e;
+    color: var(--color-text-muted);
     transition: transform var(--transition-snappy), color var(--transition-snappy);
 }
 
 .footer-heading-btn:hover .accordion-icon {
-    color: #f1eee7;
+    color: var(--color-crimson);
 }
 
 /* Accordion Active / Collapsed States */
@@ -1750,26 +1750,27 @@ img {
 }
 
 .footer-links-list a {
-    color: #9c978e;
-    font-size: 0.82rem;
-    letter-spacing: 0.02em;
+    color: var(--color-text-muted);
+    font-size: 0.84rem;
+    text-decoration: none;
+    letter-spacing: 0.04em;
     transition: color var(--transition-snappy);
 }
 
 .footer-links-list a:hover {
-    color: #f1eee7;
+    color: var(--color-crimson);
 }
 
 .footer-bottom-bar {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding-top: 2rem;
-    border-top: 1px solid rgba(241, 238, 231, 0.1);
+    border-top: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.72rem;
-    color: #6e6a62;
+    font-size: 0.76rem;
+    color: var(--color-text-muted);
     letter-spacing: 0.08em;
 }
 
@@ -1780,7 +1781,7 @@ img {
 }
 
 .legal-links a:hover {
-    color: #f1eee7;
+    color: var(--color-crimson);
 }
 
 .legal-divider {
