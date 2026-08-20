@@ -66,28 +66,44 @@
         </div>
 
         <nav class="mobile-nav-sections">
-            <div class="mobile-nav-group">
-                <span class="mobile-nav-group-label">STORE NAVIGATION</span>
-                <a href="#shop">All Releases</a>
-                <a href="#shop" data-filter="outerwear">Outerwear & Jackets</a>
-                <a href="#shop" data-filter="hoodies">Hoodies & Sweats</a>
-                <a href="#shop" data-filter="tees">T-Shirts & Tops</a>
-                <a href="#shop" data-filter="pants">Pants & Bottoms</a>
-                <a href="#shop" data-filter="accessories">Headwear & Accessories</a>
+            <!-- Group 1: Collection / Store -->
+            <div class="mobile-nav-group drawer-accordion active">
+                <button class="drawer-accordion-btn" type="button">
+                    <span class="mobile-nav-group-label">COLLECTION</span>
+                    <svg class="drawer-arrow-icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </button>
+                <div class="drawer-accordion-content">
+                    <a href="#shop" class="drawer-link">All Releases</a>
+                    <a href="#shop" class="drawer-link">Heavyweight Hoodies</a>
+                    <a href="#lookbook" class="drawer-link">FW26 Lookbook</a>
+                </div>
             </div>
 
-            <div class="mobile-nav-group">
-                <span class="mobile-nav-group-label">EDITORIAL</span>
-                <a href="#lookbook">FW26 Lookbook</a>
-                <a href="#manifesto">Brand Manifesto</a>
+            <!-- Group 2: Client Care -->
+            <div class="mobile-nav-group drawer-accordion">
+                <button class="drawer-accordion-btn" type="button">
+                    <span class="mobile-nav-group-label">CLIENT CARE</span>
+                    <svg class="drawer-arrow-icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </button>
+                <div class="drawer-accordion-content">
+                    <a href="#" class="open-size-guide-trigger drawer-link">Size Guide & Fit</a>
+                    <a href="#" class="open-policy-trigger drawer-link" data-policy="shipping">Shipping & Customs</a>
+                    <a href="#" class="open-policy-trigger drawer-link" data-policy="returns">Returns & Exchange</a>
+                    <a href="#manifesto" class="drawer-link">Brand Manifesto</a>
+                </div>
             </div>
 
-            <div class="mobile-nav-group sub-links">
-                <span class="mobile-nav-group-label">CLIENT SERVICES</span>
-                <a href="#" class="open-size-guide-trigger">Size Guide & Fit</a>
-                <a href="#" class="open-policy-trigger" data-policy="shipping">Shipping & Customs</a>
-                <a href="#" class="open-policy-trigger" data-policy="returns">Returns & Exchange</a>
-                <a href="#footer">Contact Concierge</a>
+            <!-- Group 3: Connect & Soundscape -->
+            <div class="mobile-nav-group drawer-accordion">
+                <button class="drawer-accordion-btn" type="button">
+                    <span class="mobile-nav-group-label">CONNECT</span>
+                    <svg class="drawer-arrow-icon" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                </button>
+                <div class="drawer-accordion-content">
+                    <a href="#soundscape" class="drawer-link">Spotify // Soundscapes</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="drawer-link">Instagram // @impostrix.eg</a>
+                    <a href="mailto:concierge@impostrix.com" class="drawer-link">concierge@impostrix.com</a>
+                </div>
             </div>
         </nav>
         
@@ -365,7 +381,17 @@
                 <span class="number-accent">01 // COLLECTION</span>
                 <span class="items-count-tag" id="visible-products-count">2 PIECES</span>
             </div>
-            <h2 class="section-title">LATEST RELEASES</h2>
+            <div class="section-title-row">
+                <h2 class="section-title">LATEST RELEASES</h2>
+                <div class="carousel-nav-arrows">
+                    <button class="carousel-nav-btn" id="scroll-left-btn" aria-label="Previous Product">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                    </button>
+                    <button class="carousel-nav-btn" id="scroll-right-btn" aria-label="Next Product">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                    </button>
+                </div>
+            </div>
             
             <!-- Category Filter Tabs -->
             <div class="filter-tabs" style="display: none;">
@@ -702,7 +728,12 @@
         </div>
     </div>
 
-    <!-- Script -->
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
+    <!-- Interactions Script -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -205,7 +205,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeCartBtn) closeCartBtn.addEventListener('click', closeAllDrawers);
     if (drawerOverlay) drawerOverlay.addEventListener('click', closeAllDrawers);
 
-    // Mobile nav item click
+    // Mobile nav item click & Drawer Accordions
+    document.querySelectorAll('.drawer-accordion-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const group = btn.closest('.drawer-accordion');
+            if (group) {
+                group.classList.toggle('active');
+            }
+        });
+    });
+
     document.querySelectorAll('.mobile-nav-sections a').forEach(link => {
         link.addEventListener('click', () => {
             const filter = link.getAttribute('data-filter');
@@ -620,4 +629,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Carousel Arrow Buttons ---
+    const scrollLeftBtn = document.getElementById('scroll-left-btn');
+    const scrollRightBtn = document.getElementById('scroll-right-btn');
+    const productsGrid = document.getElementById('products-grid');
+
+    if (productsGrid) {
+        if (scrollLeftBtn) {
+            scrollLeftBtn.addEventListener('click', () => {
+                productsGrid.scrollBy({ left: -340, behavior: 'smooth' });
+            });
+        }
+        if (scrollRightBtn) {
+            scrollRightBtn.addEventListener('click', () => {
+                productsGrid.scrollBy({ left: 340, behavior: 'smooth' });
+            });
+        }
+
+        // Mouse Drag to Scroll (Desktop Luxury Feel)
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        productsGrid.addEventListener('mousedown', (e) => {
+            if (e.target.closest('button') || e.target.closest('a')) return;
+            isDown = true;
+            productsGrid.classList.add('is-dragging');
+            startX = e.pageX - productsGrid.offsetLeft;
+            scrollLeft = productsGrid.scrollLeft;
+        });
+
+        productsGrid.addEventListener('mouseleave', () => {
+            isDown = false;
+            productsGrid.classList.remove('is-dragging');
+        });
+
+        productsGrid.addEventListener('mouseup', () => {
+            isDown = false;
+            productsGrid.classList.remove('is-dragging');
+        });
+
+        productsGrid.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - productsGrid.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            productsGrid.scrollLeft = scrollLeft - walk;
+        });
+    }
+
+    // --- Back To Top Button ---
+    const backToTopBtn = document.getElementById('back-to-top-btn');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 450) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        }, { passive: true });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
 });
+
